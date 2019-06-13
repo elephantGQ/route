@@ -6,7 +6,8 @@ const content=require('./utils/content')
 const mimes=require('./utils/mimes')
 const server=http.createServer((req,res)=>{
     const reqUrl=req.url;
-    const public =__dirname+'/public'
+    // const public =__dirname+'/public'
+    const public ="D:\\Program Files"
     //public这块是你的服务的主路径
     const directior=qs.unescape(path.join(public, reqUrl))
     if (/favicon\.ico$/.test(reqUrl)) {
